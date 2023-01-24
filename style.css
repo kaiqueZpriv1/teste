@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./img/bacground-img.jpg");
+  background-size: 100%;
+}
+#formulario {
+  background-color: rgb(58, 35, 152);
+  width: 500px;
+  height: 400px;
+  border-radius: 5px;
+  margin-left: 250px; /*precisa estar em 150 */
+  /* margin-left: 5px; */
+}
+.content-formulario {
+  margin: 110px 0;
+  display: flex;
+}
+/* IMAGENS E ICONES (PARTE DE APRESENTAÇÃO) */
+.img_icons {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.lobo-img {
+  width: 100px;
+}
+.lock-block i,
+.lock-open i {
+  font-size: 10vw;
+  text-shadow: 0 0 10px #000;
+  color: #f6f6f6;
+}
+.lock-open {
+  display: none;
+}
+/* TEXTOS - PARTE DE APRESENTAÇÃO */
+.text-destaque {
+  text-align: center;
+}
+.txt-principal {
+  font-family: "Poppins", sans-serif;
+  color: #f6f6f6;
+  text-shadow: 0 0 10px;
+  font-size: 2.2vw;
+  margin-bottom: 20px;
+}
+.sub-principal {
+  color: rgb(187, 187, 187);
+  text-shadow: 0 0 10px #000;
+  font-size: 1.6vw;
+  margin: 0 15px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+}
+/* BUTTONS CADASTRO E LOGIN  */
+.buttons-login_cadastro {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-btn,
+.cadastro-btn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 0 10px;
+  background-color: rgb(58, 35, 152);
+  color: #f6f6f6;
+  font-size: 1.5vw;
+  font-weight: 600;
+  border: 1px solid #f6f6f6;
+  box-shadow: 0 0 10px;
+  text-shadow: 0 0 5px solid #000;
+}
+.login-btn i,
+.cadastro-btn i {
+  font-size: 1.5vw;
+  margin-right: 5px;
+}
+.login-btn:hover,
+.cadastro-btn:hover {
+  box-shadow: 0 0 15px #f6f6f6;
+}
+
+/* PARTE DE LOGIN E CADASTRO */
+#login {
+  background-color: #eaeef6;
+  border-radius: 15px 0 0 0;
+  position: absolute;
+  height: 400px;
+  margin: 0 0 0 490px;
+  display: none;
+}
+.apresentacao-login {
+  text-align: center;
+  margin: 30px 0;
+}
+.apresentacao-login h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vw;
+  color: rgb(58, 35, 152);
+  margin-bottom: 5px;
+  text-shadow: 0 0 5px;
+}
+.apresentacao-login p {
+  text-shadow: 0 0 5px;
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+/* INPUTS */
+.inputs-login {
+  text-align: center;
+}
+
+/* email */
+.box-email {
+  margin: 50px 20px 20px 20px;
+  background-color: rgb(187, 187, 187);
+  padding: 5px;
+  border-radius: 10px;
+}
+/* icone email e password */
+.box-email i,
+.box-password i {
+  font-size: 2vw;
+}
+.email-login {
+  padding: 10px;
+  background-color: rgb(187, 187, 187);
+  border: transparent;
+  font-size: 1.3vw;
+  outline: 0;
+}
+/* SENHA */
+.box-password {
+  margin: 20px;
+  background-color: rgb(187, 187, 187);
+  padding: 5px;
+  border-radius: 10px;
+}
+.senha-login {
+  padding: 10px;
+  background-color: rgb(187, 187, 187);
+  border: transparent;
+  outline: 0;
+  font-size: 1.3vw;
+}
+/* ENTER ----- */
+.entrar-login {
+  margin: 0 0 20px 0;
+}
+.enter-login {
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: rgb(187, 187, 187);
+  outline: 0;
+  border: none;
+}
+
+.reset-pass {
+  color: rgb(58, 35, 152);
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3vw;
+}

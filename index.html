@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- src -->
+    <script src="/src/script.js"></script>
+    <script src="/src/passaword.js"></script>
+    <script src="/src/login.js"></script>
+    <script src="/src/lock.js"></script>
+  </head>
+  <body>
+    <section id="formulario">
+      <div class="content-formulario">
+        <section id="apresentacao-form">
+          <div class="img_icons">
+            <img class="lobo-img" src="./img/lobo.png" alt="" />
+            <div id="lockBlock" class="lock-block">
+              <i class="ri-lock-2-fill"></i>
+            </div>
+            <div id="lockOpen" class="lock-open">
+              <i class="ri-lock-unlock-fill"></i>
+            </div>
+          </div>
+          <div class="text-destaque">
+            <h3 class="txt-principal">Faça login ou se cadastre</h3>
+            <p class="sub-principal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              non nunc at velit aliquam lobortis sed vel odio.
+            </p>
+          </div>
+          <div class="buttons-login_cadastro">
+            <div class="login-button">
+              <button id="loginBtn" class="login-btn" onclick="reveal()">
+                <i class="ri-login-box-line"></i>Login
+              </button>
+            </div>
+            <div class="cadastro-button">
+              <button id="cadastroBtn" class="cadastro-btn">
+                <i class="ri-information-line"></i>Cadastro
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="login">
+          <div class="login">
+            <div class="apresentacao-login">
+              <h3>Faça login</h3>
+              <p>Insira seu e-mail e senha !</p>
+            </div>
+            <div class="inputs-login">
+              <div class="box-email">
+                <i class="ri-mail-fill">
+                  <span>
+                    <input
+                      type="email"
+                      id="email_login"
+                      maxlength="65"
+                      placeholder="E-mail"
+                      class="email-login"
+                    />
+                  </span>
+                </i>
+              </div>
+              <div class="box-password">
+                <i class="ri-lock-password-fill">
+                  <span>
+                    <input
+                      type="password"
+                      placeholder="Senha"
+                      maxlength="6"
+                      id="password"
+                      class="senha-login"
+                    />
+                  </span>
+                </i>
+              </div>
+              <div class="entrar-login">
+                <button class="enter-login" onclick="lockOpen()">
+                  <i class="ri-external-link-line"></i>
+                  Continuar
+                </button>
+              </div>
+              <a href="#" class="reset-pass" id="password-reset"
+                >Esqueci minha senha</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>
