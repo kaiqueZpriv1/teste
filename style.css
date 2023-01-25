@@ -282,3 +282,38 @@ body {
   outline: 0;
   border: none;
 }
+
+@media screen and (max-width: 1370px) and (min-width: 1024px) {
+  #formulario {
+    height: 500px;
+    margin-left: 450px;
+  }
+  .lobo-img {
+    width: 140px;
+  }
+  .lock-block i,
+  .lock-open i {
+    font-size: 10vw;
+  }
+  /* LOGIN */
+  #login {
+    height: 500px;
+  }
+  .apresentacao-login {
+    margin: 40px 0;
+  }
+  .apresentacao-login h3 {
+    font-size: 4vw;
+  }
+  .apresentacao-login p {
+    font-size: 1.5vw;
+  }
+  /* CADASTRO */
+  #cadastro {
+    width: 350px;
+    height: 500px;
+  }
+  .apresentacao-cdt h3 {
+    font-size: 3.5vw;
+  }
+}
