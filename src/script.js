@@ -1,21 +1,32 @@
-// function validacaoEmail(field) {
-//     usuario = field.value.substring(0, field.value.indexOf("@"));
-//     dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
-    
-//     if ((usuario.length >=1) &&
-//         (dominio.length >=3) &&
-//         (usuario.search("@")==-1) &&
-//         (dominio.search("@")==-1) &&
-//         (usuario.search(" ")==-1) &&
-//         (dominio.search(" ")==-1) &&
-//         (dominio.search(".")!=-1) &&
-//         (dominio.indexOf(".") >=1)&&
-//         (dominio.lastIndexOf(".") < dominio.length - 1)) {
-//     document.getElementById("msgemail").innerHTML="E-mail válido";
-//     alert("E-mail valido");
-//     }
-//     else{
-//     document.getElementById("msgemail").innerHTML="<font color='red'>E-mail inválido </font>";
-//     alert("E-mail invalido");
-//     }
-//     }
+alert(
+  "Esse site foi feito para demonstração de conhecimento em manipulação de DOM. Para ver entender as manipulações entre no repositorio e siga o Markdown.  (repositorio no GitHub: kaiquezpriv1)"
+);
+
+function revealLogin() {
+  document.getElementById("login").style.display = "block";
+  document.getElementById("formulario").style.marginLeft = "150px";
+  document.getElementById("cadastro").style.display = "none";
+  document.getElementById("undefinedForm").style.display = "none";
+  document.getElementById("confirmForm").style.display = "none";
+  document.getElementById("lockBlock").style.display = "block";
+}
+
+function lockOpen() {
+  document.getElementById("lockBlock").style.display = "none";
+  document.getElementById("lockOpen").style.display = "block";
+}
+
+function revealCadastro() {
+  document.getElementById("cadastro").style.display = "block";
+  document.getElementById("formulario").style.marginLeft = "200px";
+  document.getElementById("login").style.display = "none";
+  document.getElementById("lockBlock").style.display = "none";
+  document.getElementById("lockOpen").style.display = "none";
+  document.getElementById("undefinedForm").style.display = "block";
+}
+function confirmCDT() {
+  document.getElementById("undefinedForm").style.display = "none";
+  document.getElementById("lockBlock").style.display = "none";
+  document.getElementById("lockOpen").style.display = "none";
+  document.getElementById("confirmForm").style.display = "block";
+}

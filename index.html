@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <title>Login</title>
     <!-- src -->
     <script src="/src/script.js"></script>
     <script src="/src/passaword.js"></script>
@@ -28,6 +29,14 @@
             <div id="lockOpen" class="lock-open">
               <i class="ri-lock-unlock-fill"></i>
             </div>
+            <div id="img-form">
+              <div id="undefinedForm" class="form-inserir">
+                <i class="ri-user-settings-fill"></i>
+              </div>
+              <div id="confirmForm" class="form-confirm">
+                <i class="ri-user-follow-fill"></i>
+              </div>
+            </div>
           </div>
           <div class="text-destaque">
             <h3 class="txt-principal">Faça login ou se cadastre</h3>
@@ -38,12 +47,16 @@
           </div>
           <div class="buttons-login_cadastro">
             <div class="login-button">
-              <button id="loginBtn" class="login-btn" onclick="reveal()">
+              <button id="loginBtn" class="login-btn" onclick="revealLogin()">
                 <i class="ri-login-box-line"></i>Login
               </button>
             </div>
             <div class="cadastro-button">
-              <button id="cadastroBtn" class="cadastro-btn">
+              <button
+                id="cadastroBtn"
+                class="cadastro-btn"
+                onclick="revealCadastro()"
+              >
                 <i class="ri-information-line"></i>Cadastro
               </button>
             </div>
@@ -91,6 +104,63 @@
               <a href="#" class="reset-pass" id="password-reset"
                 >Esqueci minha senha</a
               >
+            </div>
+          </div>
+        </section>
+        <section id="cadastro">
+          <div class="cdt">
+            <div class="apresentacao-cdt">
+              <h3>Faça seu cadastro</h3>
+              <p>Preencha as informações e crie uma senha</p>
+            </div>
+            <div class="inputs-cdt">
+              <div class="email-cdt email-hover">
+                <i class="ri-mail-fill">
+                  <span>
+                    <input
+                      type="email"
+                      id="email_cdt"
+                      maxlength="65"
+                      placeholder="Insira seu melhor email"
+                      class="email-cdt"
+                    />
+                  </span>
+                </i>
+              </div>
+              <div class="senha-cdt senha-hover">
+                <i class="ri-lock-password-fill">
+                  <span>
+                    <input
+                      type="password"
+                      placeholder="Insira uma senha de 6 digitos"
+                      maxlength="6"
+                      id="passwordCdt"
+                      class="senha-cdt"
+                    />
+                  </span>
+                </i>
+              </div>
+              <div class="senha-cdt-conf senha-hover">
+                <i class="ri-checkbox-blank-line"></i>
+                <i class="ri-checkbox-line"></i>
+                <i class="ri-checkbox-indeterminate-line"></i>
+                <input
+                  type="password"
+                  placeholder="Confirme sua senha"
+                  maxlength="6"
+                  id="confirmePassword"
+                  class="senha-cdt-conf"
+                />
+              </div>
+              <div class="confirm-enter">
+                <button
+                  id="confirm-cdt"
+                  class="confirm-btn-cdt"
+                  onclick="confirmCDT()"
+                >
+                  Corfirma
+                </button>
+              </div>
             </div>
           </div>
         </section>
